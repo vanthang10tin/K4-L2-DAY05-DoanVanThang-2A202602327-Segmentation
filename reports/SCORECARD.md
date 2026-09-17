@@ -1,12 +1,12 @@
 # Day-5 Segmentation — Scorecard
 
-**Total: 0.0 / 100**
+**Total: 47.2 / 100**
 
 | Task | Group | Type | Metric | Points |
 | --- | --- | --- | ---: | ---: |
-| easy_semantic (missing) | tiers | semantic | — | 0.0 / 20 |
-| medium_instance (missing) | tiers | instance | — | 0.0 / 32 |
-| hard_panoptic (missing) | tiers | panoptic | — | 0.0 / 30 |
+| easy_semantic | tiers | semantic | 0.810 | 18.2 / 20 |
+| medium_instance | tiers | instance | 0.618 | 15.5 / 32 |
+| hard_panoptic | tiers | panoptic | 0.403 | 13.5 / 30 |
 | cp1_holes (missing) | checkpoints | instance | — | 0.0 / 3 |
 | cp2_slice (missing) | checkpoints | instance | — | 0.0 / 3 |
 | cp5_occlusion (missing) | checkpoints | instance | — | 0.0 / 3 |

@@ -1,6 +1,6 @@
 # Phiếu quy tắc gán nhãn — Ngày 5 Segmentation
 
-**Họ và tên:** CHƯA ĐIỀN &nbsp;·&nbsp; **MSSV:** CHƯA ĐIỀN
+**Họ và tên:** Đoàn Văn Thắng &nbsp;·&nbsp; **MSSV:** 26A202602327 - T037
 
 ## 1. Ba loại bài — chọn đúng loại trước khi vẽ
 
@@ -43,24 +43,24 @@ Chọn nhầm loại = làm lại. Easy = semantic, Medium = instance, Hard = pa
 ## 5. Ba tình huống mơ hồ (điền trước khi xem điểm)
 
 ### A — `car` hay `truck`/`van`? (pickup có thùng, minibus…)
-- Ảnh và vị trí vật: CHƯA ĐIỀN
-- Dấu hiệu nhìn thấy: CHƯA ĐIỀN
-- Quy tắc áp dụng + quyết định: CHƯA ĐIỀN
+- Ảnh và vị trí vật: Ảnh `000000460147.jpg` (Hard), vị trí các phương tiện lớn di chuyển ở làn xe phía sau/xa.
+- Dấu hiệu nhìn thấy: Phần đuôi có kết cấu thùng hàng khối hộp kín và sàn xe chuyên chở hàng hóa rõ rệt, kích thước tổng thể lớn hơn hẳn ô tô con thông thường.
+- Quy tắc áp dụng + quyết định: Áp dụng quy tắc tại Mục 2: "truck: có thùng/ben/sàn hàng rõ; car: ô tô con, SUV, taxi". Quyết định: Gán nhãn `truck`.
 
 ### B — Instance: hai vật hay một? (xe sát nhau / xe bị che cắt đôi)
-- Ảnh và vị trí: CHƯA ĐIỀN
-- Slice hay Join? Vì sao: CHƯA ĐIỀN
+- Ảnh và vị trí: Ảnh `000000373353.jpg` (Medium), vị trí 2 chiếc ô tô đỗ song song sát cạnh nhau trên lề đường.
+- Slice hay Join? Vì sao: Chọn **Slice (Alt+J)**. Vì đây là hai phương tiện đếm được (instance) riêng biệt, nhưng khi dùng công cụ vẽ tự động/SAM dễ bị dính chung đường biên thành một khối. Cần dùng Slice để cắt rời thành 2 mask độc lập.
 
 ### C — Semantic: `road` hay `sidewalk` ở chỗ bó vỉa?
-- Ảnh và vị trí: CHƯA ĐIỀN
-- Bằng chứng ở mức phóng 100%: CHƯA ĐIỀN
-- Quyết định: CHƯA ĐIỀN
+- Ảnh và vị trí: Ảnh `81ae7cbb-6bc63a4a.jpg` (Easy), đoạn mép vỉa hè tiếp giáp lòng đường xe chạy phía bên phải.
+- Bằng chứng ở mức phóng 100%: Dù bề mặt đường và vỉa hè đều có màu xám bê tông/asphalt tương tự nhau, mức phóng 100% cho thấy rõ đường gờ bó vỉa nhô cao (curb line) và sự ngắt quãng của vạch kẻ mép đường xe chạy.
+- Quyết định: Áp dụng quy tắc "Bó vỉa (curb)" tại Mục 4: Lấy ranh giới là mép kết thúc mặt đường xe chạy. Phần lòng đường gán `road`, gờ bó vỉa hắt vào trong phần cho người đi bộ gán `sidewalk`.
 
 ## 6. Tự kiểm tra
 
-- [ ] Đã chọn đúng loại phân vùng cho từng cấp.
-- [ ] Tên lớp đúng từng chữ như `classes.json`.
-- [ ] Không khoét lỗ thủng; không gộp/không tách nhầm instance.
-- [ ] Panoptic: không có pixel bị hai mask; đã kiểm coverage.
-- [ ] Đã tự chấm bằng `scoring/score.py` và sửa lớp/vật điểm thấp.
-- [ ] Không nộp ground truth, không sửa trực tiếp tệp xuất.
+- [x] Đã chọn đúng loại phân vùng cho từng cấp.
+- [x] Tên lớp đúng từng chữ như `classes.json`.
+- [x] Không khoét lỗ thủng; không gộp/không tách nhầm instance.
+- [x] Panoptic: không có pixel bị hai mask; đã kiểm coverage.
+- [x] Đã tự chấm bằng `scoring/score.py` và sửa lớp/vật điểm thấp.
+- [x] Không nộp ground truth, không sửa trực tiếp tệp xuất.

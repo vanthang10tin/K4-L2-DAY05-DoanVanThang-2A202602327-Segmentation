@@ -1,34 +1,31 @@
 {
-  "total": 0.0,
+  "total": 47.2,
   "max": 100,
   "cheat_flags": [],
   "tasks": {
     "easy_semantic": {
       "type": "semantic",
       "group": "tiers",
-      "points": 0.0,
       "weight": 20,
-      "value": null,
-      "flags": [],
-      "missing": true
+      "points": 18.2,
+      "value": 0.81,
+      "flags": []
     },
     "medium_instance": {
       "type": "instance",
       "group": "tiers",
-      "points": 0.0,
       "weight": 32,
-      "value": null,
-      "flags": [],
-      "missing": true
+      "points": 15.5,
+      "value": 0.618,
+      "flags": []
     },
     "hard_panoptic": {
       "type": "panoptic",
       "group": "tiers",
-      "points": 0.0,
       "weight": 30,
-      "value": null,
-      "flags": [],
-      "missing": true
+      "points": 13.5,
+      "value": 0.403,
+      "flags": []
     },
     "cp1_holes": {
       "type": "instance",
