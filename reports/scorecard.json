@@ -1,5 +1,5 @@
 {
-  "total": 47.2,
+  "total": 51.8,
   "max": 100,
   "cheat_flags": [],
   "tasks": {
@@ -15,8 +15,8 @@
       "type": "instance",
       "group": "tiers",
       "weight": 32,
-      "points": 15.5,
-      "value": 0.618,
+      "points": 20.1,
+      "value": 0.683,
       "flags": []
     },
     "hard_panoptic": {
